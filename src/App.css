@@ -1,38 +1,116 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  width: 100%;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #0a0e27;
 }
 
-.App-link {
-  color: #61dafb;
+html {
+  scroll-behavior: smooth;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: 80px 20px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.btn {
+  padding: 12px 28px;
+  border: 2px solid #60a5fa;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #60a5fa;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #60a5fa;
+  color: #0a0e27;
+}
+
+.btn-primary {
+  background-color: #60a5fa;
+  color: #0a0e27;
+  border-color: #60a5fa;
+}
+
+.btn-primary:hover {
+  background-color: #93c5fd;
+  border-color: #93c5fd;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  background-color: #1a1f3a;
+  border: 1px solid #2d3748;
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  border-color: #60a5fa;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(96, 165, 250, 0.1);
+}
+
+.tag {
+  display: inline-block;
+  background-color: #2d3748;
+  color: #60a5fa;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    display: none !important;
+  }
+
+  .hero-grid,
+  .projects-grid,
+  .skills-grid {
+    grid-template-columns: 1fr !important;
   }
 }
