@@ -43,11 +43,11 @@ function Hero() {
               At present, I'm focused on developing Web3 solutions and collaborating on open-source initiatives.
             </p>
             <div style={{ marginTop: "40px", display: "flex", gap: "1rem" }}>
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{
+              <a href="/resume_1.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{
                 padding: "14px 32px",
                 fontSize: "1.1rem",
               }}>
-                Open CV →
+                Resume →
               </a>
               <a href="#contact" className="btn" style={{
                 padding: "14px 32px",
