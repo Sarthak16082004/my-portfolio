@@ -76,7 +76,7 @@ function Navbar() {
         </ul>
         
         <a
-          href="#"
+          href="#achievements"
           style={{
             padding: "10px 20px",
             backgroundColor: "transparent",
@@ -96,6 +96,7 @@ function Navbar() {
             e.currentTarget.style.backgroundColor = "transparent";
             e.currentTarget.style.color = "#60a5fa";
           }}
+          title="View achievements"
         >
           🏆
         </a>
