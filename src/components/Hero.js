@@ -43,7 +43,7 @@ function Hero() {
               At present, I'm focused on developing Web3 solutions and collaborating on open-source initiatives.
             </p>
             <div style={{ marginTop: "40px", display: "flex", gap: "1rem" }}>
-              <a href="#contact" className="btn btn-primary" style={{
+              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{
                 padding: "14px 32px",
                 fontSize: "1.1rem",
               }}>
@@ -73,7 +73,7 @@ function Hero() {
               boxShadow: "0 20px 60px rgba(96, 165, 250, 0.3)",
             }}>
               <img 
-                src="https://avatars.githubusercontent.com/u/134594305?v=4" 
+                src="/profile.jpg" 
                 alt="Sarthak Pathak"
                 style={{
                   width: "100%",
